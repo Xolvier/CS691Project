@@ -1,0 +1,11 @@
+I wondered how mySQL or any SQL database could hold a list of all the items that were purchased and how many for each and every 
+distinct order.
+
+For every order, the size of that list/array is variable. The quantity of each item in that list would also be variable.
+So we need something very flexible. 
+
+I'm thinking storing this data in JSON format would be the way to go(MongoDB/NoSQL), because parameters for JSON is not strict, it can be 
+whatever size. All I remember from SQL is that fields/attributes do not hold arrays of variable size.
+
+Am I looking at this the wrong way? Or is there a better way to do this?
+I would like to know some thoughts you guys may have regarding this.
