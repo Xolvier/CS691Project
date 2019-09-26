@@ -1,0 +1,8 @@
+{
+    "_id" : 1909260000,
+    "orderType" : "delivery",
+    "orderList" : ["Kahuna Burger", "Sprite_Can", "Cheese Fries"],
+    "timeOrdered" : 1318,          
+    "timeReady" : 1342,            
+    "timeCompleted" : 1346          
+}
