@@ -1,0 +1,8 @@
+For this we would need 2 separate databases off the bat.
+
+One(SQL) would be for transactions/payment.
+
+The other(TBD) would be for each order made, containing the items ordered, what type of order(dine-in, delivery, pickup).
+
+Feel free to let me know if there are others needed for this, if there should be changes in how they should
+be set up, or anything else.
