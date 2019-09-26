@@ -1,0 +1,22 @@
+I was thinking for orders(which will be the unique primary key for all/most applications) should be safely written if it took 
+this format:
+
+OrderID
+1909250000
+
+First two digits(19 above) - 19 would signify 2019, only takes 2 digits, allowing for format use until 2099 seems safe to me.
+Second two digits(09 above) - 09 would signify September, so this will range from 01 and 12 at any given number.
+Third two digits(25 above) - 25 would mean 25th day.
+Last four digits(0000 above) - means which order on that date essentially.
+
+First order on any day is always 0000 for last four digits.
+Last possible order on any day is 9999.
+
+This format is safe because I do not know of any single restaurant location that serves over 10000 orders on any given day.
+
+On top of being safe, it's also meaningful, and may be useful for searches or sorts when boiling all orders down to year, month, date.
+
+I imagine if there was ever an issue with a customer, theyre ticket would read a ticket number anywhere from 0000 to 9999, 
+it would also show the date for when they arrived for food. If they aren't sure about what ticket number and do not have the ticket 
+or receipt, they can at least recall the day they arrived(search would be something along the lines of "20190926$$$$") 
+
